@@ -1,0 +1,28 @@
+.modal{
+    .modal-dialog{
+
+        > .modal-content{
+            border-radius:0;
+            > .modal-header{
+                border-bottom:none;
+                h4{
+                    padding-left:10px;
+                    padding-right:10px;
+                    color:$white;
+                    text-align:center;
+                }
+                .close{
+                    color:$white;
+                    opacity:1;
+                }
+            }
+            > .modal-body{
+                input{
+                    border-radius:0;
+                }
+            }
+            background-color: $blue;
+        }
+    }
+
+}

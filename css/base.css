@@ -1,0 +1,426 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot");
+  src: url("/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff") format("woff"), url("/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf") format("truetype"), url("/fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("/fonts/opensans_bold_macroman/OpenSans-Regular-webfont.eot");
+  src: url("/fonts/opensans_bold_macroman/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans_bold_macroman/OpenSans-Regular-webfont.woff") format("woff"), url("/fonts/opensans_bold_macroman/OpenSans-Regular-webfont.ttf") format("truetype"), url("/fonts/opensans_bold_macroman/OpenSans-Regular-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'museo_slab500';
+  src: url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.eot");
+  src: url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff2") format("woff2"), url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.woff") format("woff"), url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.ttf") format("truetype"), url("/fonts/museoslab_500_macroman/Museo_Slab_500_2-webfont.svg#museo_slab500") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.modal .modal-dialog > .modal-content {
+  border-radius: 0;
+  background-color: #044868; }
+  .modal .modal-dialog > .modal-content > .modal-header {
+    border-bottom: none; }
+    .modal .modal-dialog > .modal-content > .modal-header h4 {
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #FFF;
+      text-align: center; }
+    .modal .modal-dialog > .modal-content > .modal-header .close {
+      color: #FFF;
+      opacity: 1; }
+  .modal .modal-dialog > .modal-content > .modal-body input {
+    border-radius: 0; }
+
+body {
+  font-family: "open_sansregular", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 111px;
+  position: relative; }
+  body strong {
+    font-family: "open_sansbold", sans-serif; }
+
+h1 {
+  font-family: "museo_slab500", serif;
+  text-align: center;
+  font-size: 30px; }
+
+h2.admin {
+  display: block;
+  border-bottom: 0;
+  text-align: center;
+  margin-bottom: 15px; }
+
+h3 {
+  font-family: "museo_slab500", serif;
+  font-size: 22px; }
+
+h4 {
+  font-family: "museo_slab500", serif; }
+
+.heading {
+  text-align: center;
+  display: block; }
+  .heading .accent {
+    text-align: center;
+    display: block;
+    height: 24px;
+    width: 70px;
+    margin: 30px auto 0 auto;
+    background: url(../img/separator.png) no-repeat; }
+    .heading .accent.light {
+      background-position: bottom; }
+    .heading .accent.dark {
+      background-position: top; }
+
+.divider {
+  color: #FFF;
+  padding: 60px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-crop.jpg) center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.btn.btn-outline {
+  background: none;
+  border: 2px solid #FFF;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color linear 0.1s; }
+  .btn.btn-outline:hover {
+    color: #FFF;
+    background-color: #044868; }
+
+h2 {
+  font-family: "museo_slab500", serif;
+  font-size: 24px;
+  border-bottom: 2px solid #044868;
+  display: inline-block;
+  padding-bottom: 28px;
+  margin-bottom: 60px;
+  text-transform: uppercase; }
+  h2.light {
+    border-bottom: 2px solid #FFF; }
+
+#intro,
+#about,
+#opportunities,
+#ourteam {
+  padding: 60px 0 60px 0; }
+
+#intro {
+  background-color: #333;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/img-sunset.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF;
+  height: 550px; }
+  #intro h1 {
+    margin-bottom: 50px; }
+  #intro .container {
+    display: table; }
+  #intro .container > .row {
+    margin-top: 100px;
+    text-align: center; }
+  #intro a {
+    color: #FFF; }
+
+#about .callout {
+  margin-top: 40px; }
+  #about .callout .item {
+    background-color: #044868;
+    color: #FFF;
+    padding: 65px 15px 15px 15px;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 24px;
+    min-height: 330px; }
+    #about .callout .item .circle {
+      position: absolute;
+      margin: 0 auto;
+      display: block;
+      left: 50%;
+      top: 0px;
+      width: 65px;
+      height: 65px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%;
+      background-color: #f6f6f6;
+      transform: translate(-50%, -50%); }
+      #about .callout .item .circle .square {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        background-color: #044868;
+        transform: translate(-50%, -50%) rotate(45deg); }
+
+#eb5 {
+  color: #333;
+  background-color: #FFF;
+  padding: 30px 0; }
+
+#finance .left {
+  color: #FFF;
+  background-color: #044868; }
+  #finance .left .content {
+    max-width: 570px;
+    float: right;
+    text-align: center;
+    padding: 40px; }
+#finance .right .content {
+  max-width: 570px;
+  float: left;
+  padding: 40px; }
+  #finance .right .content h3 {
+    color: #044868; }
+
+#opportunities {
+  background-color: #eef4f4; }
+  #opportunities h3 {
+    color: #044868; }
+  #opportunities img {
+    margin-bottom: 15px; }
+
+#ourteam .profile {
+  text-align: center; }
+  #ourteam .profile .img-circle {
+    border: 4px solid #044868;
+    margin-bottom: 30px; }
+  #ourteam .profile .content {
+    padding: 0px 35px 35px 35px; }
+#ourteam .name,
+#ourteam .title {
+  text-align: center; }
+#ourteam .name {
+  color: #044868;
+  font-size: 24px; }
+#ourteam .title {
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #666; }
+#ourteam p {
+  text-align: left;
+  font-size: 14px; }
+
+footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: #CCC; }
+  footer h2 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px; }
+  footer .border-top {
+    border-top: 1px solid #CCC;
+    padding-top: 15px;
+    margin-top: 15px; }
+  footer ul.contact {
+    list-style-type: none;
+    margin-left: -5px;
+    margin-top: 15px; }
+    footer ul.contact > li {
+      margin-bottom: 10px; }
+      footer ul.contact > li > span {
+        margin-left: 10px; }
+      footer ul.contact > li.address:before {
+        font-family: 'FontAwesome';
+        content: '\f041';
+        margin: 0 0 0 -24px; }
+      footer ul.contact > li.phone:before {
+        font-family: 'FontAwesome';
+        content: '\f095 ';
+        margin: 0 5px 0 -28px; }
+      footer ul.contact > li.fax::before {
+        font-family: 'FontAwesome';
+        content: '\f1ac ';
+        margin: 0 4px 0 -30px; }
+      footer ul.contact > li.email::before {
+        font-family: 'FontAwesome';
+        content: '\f003 ';
+        margin: 0 4px 0 -30px; }
+  footer ul.footer-nav {
+    list-style-type: none;
+    margin-left: -5px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px; }
+    footer ul.footer-nav > li a {
+      color: #CCC; }
+
+.register-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #3491bc;
+  border: 3px solid #3491bc;
+  font-size: 14px;
+  color: #FFF;
+  transition: background-color linear 0.1s; }
+  .register-btn .fa-chevron-right {
+    margin-left: 5px; }
+  .register-btn:hover {
+    color: #FFF;
+    background-color: #3491bc; }
+
+#login-form {
+  background-color: #044868;
+  padding: 10px; }
+
+.fa-remove {
+  color: red; }
+
+.navbar-right {
+  margin-right: 15px; }
+
+.navbar-collapse.collapsing,
+.navbar-collapse.in {
+  margin-top: 30px; }
+
+.navbar-default {
+  background-color: #044868;
+  border-color: #0a5375;
+  padding: 30px 0 30px 0;
+  margin-bottom: 0;
+  font-family: "museo_slab500", serif;
+  font-size: 14px; }
+  .navbar-default .navbar-brand {
+    color: #FFF; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #FFF; }
+  .navbar-default .navbar-text {
+    color: #FFF; }
+  .navbar-default .navbar-nav > li > a {
+    color: #FFF; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #FFF; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background: #0a5375; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #FFF;
+    background-color: #0a5375; }
+  .navbar-default .navbar-toggle {
+    border-color: #0a5375; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #0a5375; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #FFF; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #FFF; }
+  .navbar-default .navbar-link {
+    color: #FFF; }
+    .navbar-default .navbar-link:hover {
+      color: #FFF; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #FFF; }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #FFF; }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFF;
+    background-color: #0a5375; } }
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  footer .footer-logo {
+    text-align: center;
+    margin-bottom: 20px; }
+
+  .navbar-collapse .navbar-right {
+    margin-right: -15px; }
+
+  #about .callout .item {
+    background: none;
+    color: #333;
+    min-height: inherit; }
+
+  #finance .left {
+    padding: 30px 15px;
+    background-color: #044868;
+    color: #FFF; }
+    #finance .left .content {
+      padding: 0;
+      float: none; }
+  #finance .right .content {
+    padding: 30px 15px; }
+
+  .divider {
+    padding: 30px 0; }
+    .divider h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      line-height: 24px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  footer .footer-logo {
+    text-align: left;
+    margin-bottom: 20px; }
+
+  .divider {
+    padding: 60px 0; }
+    .divider h1 {
+      font-size: 30px;
+      line-height: 1.1; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .collapse .navbar-right {
+    margin-right: 15px; }
+
+  #about .callout .item {
+    background-color: #044868;
+    min-height: 300px;
+    color: #FFF; }
+
+  #finance .left .content {
+    float: none;
+    max-width: 100%; }
+  #finance .right .content {
+    max-width: 100%; }
+  #finance .container-fluid > .row {
+    display: block; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .divider {
+    padding: 100px 0; }
+
+  #about .callout .item {
+    background-color: #044868;
+    color: #FFF;
+    min-height: 330px; }
+
+  #finance .left .content {
+    float: right;
+    max-width: 570px; }
+  #finance .right .content {
+    max-width: 570px; }
+  #finance .container-fluid > .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */

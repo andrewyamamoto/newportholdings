@@ -1,0 +1,186 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        footer{
+            .footer-logo{
+                text-align:center;
+                margin-bottom:20px;
+            }
+        }
+        .navbar-collapse .navbar-right{
+            margin-right:-15px;
+        }
+        #about {
+            .callout{
+                .item{
+                    background:none;
+                    color:$dkgrey;
+                    min-height:inherit;
+                }
+            }
+        }
+        #finance{
+            .left{
+                padding:30px 15px;
+                background-color:$blue;
+                color:$white;
+                .content{
+                    padding:0;
+                    float:none;
+                }
+            }
+            .right{
+                .content{
+                    padding:30px 15px;
+                }
+            }
+        }
+        .divider{
+            padding:30px 0;
+            h1{
+                margin: 0;
+                padding: 0;
+                font-size:18px;
+                line-height:24px;
+            }
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        footer{
+            .footer-logo{
+                text-align:left;
+                margin-bottom:20px;
+            }
+        }
+        .divider{
+            padding: 60px 0;
+            h1{
+                font-size:30px;
+                line-height:1.1;
+            }
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .collapse .navbar-right{
+            margin-right:15px;
+        }
+        #about{
+            .callout{
+                .item{
+                    background-color:$blue;
+                    min-height:300px;
+                    color:$white;
+                }
+            }
+        }
+        #finance{
+            .left{
+                .content{
+                    float:none;
+                    max-width:100%;
+                }
+            }
+            .right{
+                .content{
+                    max-width:100%;
+                }
+            }
+            .container-fluid > .row{
+                display:block;
+            }
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .divider{
+            padding:100px 0;
+        }
+        #about{
+            .callout{
+                .item{
+                    background-color: $blue;
+                    color:$white;
+                    min-height:330px;
+                }
+            }
+        }
+        #finance{
+            .left{
+                .content{
+                    float:right;
+                    max-width:570px;
+                }
+            }
+            .right{
+                .content{
+                    max-width:570px;
+                }
+            }
+            .container-fluid > .row{
+                @include flex;
+            }
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        // #about{
+        //     .callout{
+        //         .item{
+        //             background-color: $blue;
+        //             color:$dkgrey;
+        //             min-height:400px;
+        //         }
+        //     }
+        // }
+        // #about{
+        //     .callout{
+        //         .item{
+        //             min-height:330px;
+        //         }
+        //     }
+        // }
+
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }

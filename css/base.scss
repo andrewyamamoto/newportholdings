@@ -1,0 +1,330 @@
+@import '_colors';
+@import '_fonts';
+@import '_modal';
+body{
+    font-family: "open_sansregular", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top:111px;
+    position: relative;
+    strong {
+        font-family: "open_sansbold", sans-serif;
+    }
+}
+
+// Main heading for dividers
+h1{
+    font-family: "museo_slab500", serif;
+    text-align:center;
+    font-size:30px;
+}
+h2.admin{
+    display:block;
+    border-bottom:0;
+    text-align:center;
+    margin-bottom: 15px;
+    // margin:0;
+}
+h3{
+    font-family: "museo_slab500", serif;
+    font-size:22px;
+}
+h4{
+    font-family: "museo_slab500", serif;
+}
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+// heading for page section
+.heading{
+    text-align: center;
+    display:block;
+    .accent{
+        text-align:center;
+        display:block;
+        height:24px;
+        width: 70px;
+        margin:30px auto 0 auto;
+        background:url(../img/separator.png) no-repeat;
+        &.light{
+            background-position: bottom;
+        }
+        &.dark{
+            background-position: top;
+        }
+    }
+}
+// large section divider
+.divider{
+    color:$white;
+    padding:60px 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.70),
+      rgba(0, 0, 0, 0.70)
+    ), url(../img/img-crop.jpg) center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.btn.btn-outline{
+    background:none;
+    border:2px solid $white;
+    border-radius:0;
+    padding:10px 15px;
+    font-size:16px;
+    transition: background-color linear 0.1s;
+    &:hover{
+        color:$white;
+        background-color:$blue;
+    }
+}
+
+h2{
+    font-family: "museo_slab500", serif;
+    font-size:24px;
+    border-bottom:2px solid $blue;
+    display:inline-block;
+    padding-bottom:28px;
+    margin-bottom:60px;
+    text-transform: uppercase;
+    &.light{
+        border-bottom:2px solid $white;
+    }
+}
+#intro,
+#about,
+#opportunities,
+#ourteam{
+    padding:60px 0 60px 0;
+}
+
+#intro{
+    background-color:#333;
+
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ), url(../img/img-sunset.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:$white;
+    height:550px;
+    h1{
+        margin-bottom: 50px;
+    }
+    .container{display:table;}
+    .container >.row{
+        margin-top:100px;
+        text-align:center;
+    }
+    a{
+        color:$white;
+    }
+}
+#about{
+
+    .callout{
+
+        margin-top:40px;
+        .item{
+
+            background-color:$blue;
+            color:$white;
+            padding:65px 15px 15px 15px;
+            position:relative;
+            text-align:center;
+            margin-top:40px;
+            line-height:24px;
+            min-height:330px;
+            .circle{
+
+                position:absolute;
+                margin:0 auto;
+                display:block;
+                left:50%;
+                top:0px;
+                width: 65px;
+                height: 65px;
+                @include border-radius(100%);
+                background-color:$ltgrey;
+                transform: translate(-50%, -50%);
+
+                .square{
+
+                    position:absolute;
+                    width: 16px;
+                    height: 16px;
+                    display:block;
+                    margin:0 auto;
+                    top: 50%;
+                    left:50%;
+                    background-color:$blue;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+            }
+        }
+    }
+}
+#eb5{
+    color:$dkgrey;
+    background-color: $white;
+    padding:30px 0;
+}
+#finance{
+
+    .left{
+        color:$white;
+        background-color: $blue;
+        .content{
+            max-width:570px;
+            float:right;
+            text-align:center;
+            padding:40px;
+        }
+    }
+    .right{
+        .content{
+            max-width:570px;
+            float:left;
+            padding:40px;
+            h3{
+                color:$blue;
+            }
+        }
+    }
+}
+#opportunities{
+    background-color: $ltsection;
+    h3{
+        color:$blue;
+    }
+    img{
+        margin-bottom:15px;
+    }
+}
+#ourteam{
+    .profile{
+        text-align:center;
+        .img-circle{
+            border:4px solid $blue;
+            margin-bottom:30px;
+        }
+        .content{
+            padding:0px 35px 35px 35px;
+        }
+    }
+    .name,
+    .title{
+        text-align:center;
+    }
+    .name{
+        color:$blue;
+        font-size:24px;
+    }
+    .title{
+        font-size: 14px;
+        margin-bottom:30px;
+        font-weight:bold;
+        color:#666;
+    }
+    p{
+        text-align: left;
+        font-size:14px;
+    }
+}
+footer{
+    background-color: $dkgrey;
+    padding:40px 0;
+    color: $grey;;
+    h2{border:none;margin: 0;padding: 0;font-size:20px;}
+    .border-top{border-top:1px solid #CCC;padding-top:15px;margin-top: 15px;}
+    ul.contact{
+        list-style-type: none;
+        margin-left: -5px;
+        margin-top:15px;
+        > li {
+            margin-bottom:10px;
+            > span{
+                margin-left:10px;
+            }
+            &.address:before{
+                font-family: 'FontAwesome';
+                content: '\f041';
+                margin:0 0 0 -24px;
+            }
+            &.phone:before{
+                font-family: 'FontAwesome';
+                content: '\f095 ';
+                margin:0 5px 0 -28px;
+            }
+            &.fax::before{
+                font-family: 'FontAwesome';
+                content: '\f1ac ';
+                margin:0 4px 0 -30px;
+            }
+            &.email::before{
+                font-family: 'FontAwesome';
+                content: '\f003 ';
+                margin:0 4px 0 -30px;
+            }
+        }
+    }
+    ul.footer-nav{
+        list-style-type: none;
+        margin-left: -5px;
+        margin: 0;
+        padding: 0;
+        margin-top:15px;
+
+        > li {
+            // margin-bottom:10px;
+            a{
+                color:#CCC;
+            }
+        }
+    }
+
+}
+.register-btn{
+
+    margin-top:20px;
+    padding:10px 15px;
+    background-color:$medgrey;
+    border:3px solid $medgrey;
+    font-size:14px;
+    color:$white;
+    transition: background-color linear 0.1s;
+    .fa-chevron-right{
+        margin-left:5px;
+    }
+    &:hover{
+        color:$white;
+        background-color: $medgrey;
+    }
+}
+#login-form{
+    background-color:$blue;
+    padding:10px;
+}
+#registered-users{
+    // margin-top:30px;
+}
+.fa-remove{
+    color:red;
+}
+@import '_nav';
+@import '_mediaqueries';
+//	750px	970px	1170px
