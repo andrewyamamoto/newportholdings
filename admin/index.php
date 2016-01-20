@@ -27,7 +27,7 @@
                             <th><strong>Last Name</strong></th>
                             <th><strong>Email</strong></th>
                             <th><strong>Type</strong></th>
-                            <th>Remove</th>
+                            <!-- <th>Remove</th> -->
                         </tr>
                     </thead>
                 ";
@@ -38,7 +38,7 @@
                     echo "<td>$row->lastname</td>";
                     echo "<td>$row->email</td>";
                     echo "<td>$row->type</td>";
-                    echo "<td><a href=''><i class='fa fa-remove'></i></a></td>";
+                    // echo "<td><a href=''><i class='fa fa-remove'></i></a></td>";
                     echo "<tr>";
                 }
                 echo "</table></div></div></div>";
