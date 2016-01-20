@@ -17,6 +17,7 @@
                     <div class='row'>
                         <div class='col-lg-12'>
                 ";
+                echo "<form>";
                 echo "<h2 class='admin'>Users that requested information</h2>";
                 echo "<table class='table table-striped table-bordered table-condensed' id='registered-users'>";
                 echo "
@@ -41,6 +42,7 @@
                     echo "<tr>";
                 }
                 echo "</table></div></div></div>";
+                echo "</form>";
              ?>
 
              <!-- <div class='container'>
