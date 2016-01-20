@@ -17,7 +17,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <?php if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']) && $currLink == "/admin/"){ ?>
+            <?php if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']) && $currLink == "/admin/" && $currLink == "/admin/index.php" ){ ?>
 
             <ul class="nav navbar-nav navbar-right">
 
