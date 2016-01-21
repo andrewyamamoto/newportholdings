@@ -77,11 +77,14 @@ h4 {
 .divider {
   color: #FFF;
   padding: 60px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-crop.jpg) center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .divider.finance {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-crop.jpg) center fixed; }
+  .divider.eb5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-eb5.jpg) center fixed; }
 
 .btn.btn-outline {
   background: none;
@@ -119,7 +122,7 @@ h2 {
   -o-background-size: cover;
   background-size: cover;
   color: #FFF;
-  height: 550px; }
+  min-height: 550px; }
   #intro h1 {
     margin-bottom: 50px; }
   #intro .container {

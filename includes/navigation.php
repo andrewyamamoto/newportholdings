@@ -12,33 +12,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><a href="#"><img src="/img/img-logo-nh.png" height="45" alt="" /></a></a>
+            <a class="navbar-brand" href="/"><a href="/"><img src="/img/img-logo-nh.png" height="45" alt="" /></a></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <?php if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']) && $currLink == "/admin/" && $currLink == "/admin/index.php" ){ ?>
-
             <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="/login/logout.php">Logout</a></li>
+
+                <?php if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])){ ?>
+                    <li><a href="/"><i class="fa fa-home"></i></a></li>
+                    <li><a href="/admin">Admin</a></li>
+                    <li><a href="/login/logout.php">Logout</a></li>
+
+                <?php }else{ ?>
+                    <li><a href="#nh"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#finance">Structured Finance</a></li>
+                    <li><a href="#eb5">EB-5 Projects</a></li>
+                    <li><a href="#opportunities">Current Opportunities</a></li>
+                    <li><a href="#ourteam">Our Team</a></li>
+                <?php } ?>
 
             </ul>
 
-            <?php }else{ ?>
 
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="#nh"><i class="fa fa-home"></i></a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#finance">Structured Finance</a></li>
-                <li><a href="#eb5">EB-5 Projects</a></li>
-                <li><a href="#opportunities">Current Opportunities</a></li>
-                <li><a href="#ourteam">Our Team</a></li>
-
-            </ul>
-
-            <?php } ?>
 
         </div>
 

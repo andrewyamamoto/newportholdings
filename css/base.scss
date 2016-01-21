@@ -67,10 +67,18 @@ h4{
 .divider{
     color:$white;
     padding:60px 0;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.70),
-      rgba(0, 0, 0, 0.70)
-    ), url(../img/img-crop.jpg) center fixed;
+    &.finance {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.70),
+          rgba(0, 0, 0, 0.70)
+        ), url(../img/img-crop.jpg) center fixed;
+    }
+    &.eb5 {
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.70),
+          rgba(0, 0, 0, 0.70)
+        ), url(../img/img-eb5.jpg) center fixed;
+    }
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -110,17 +118,16 @@ h2{
 
 #intro{
     background-color:#333;
-
     background: linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
-    ), url(../img/img-sunset.jpg) no-repeat center fixed;
+    ), url(../img/img-sunset.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     color:$white;
-    height:550px;
+    min-height:550px;
     h1{
         margin-bottom: 50px;
     }

@@ -1,6 +1,6 @@
 <?php
     include('config/base.php');
-    $myemail = 'andrew.asada@gmail.com';
+    $myemail = 'info@newportholdingsllc.com';
     //grab named inputs from html then post to #thanks
     if (isset($_POST['firstname'])) {
 

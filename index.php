@@ -77,11 +77,11 @@
 
     </section>
 
-    <section class="divider">
+    <section class="divider finance">
 
         <div class="container">
             <h1>
-                As a property developer, we offer a long-term commitment to the growth and prosperity of the assets in which we invest.
+                "As a property developer, we offer a long-term commitment to the growth and prosperity of the assets in which we invest."
             </h1>
         </div>
 
@@ -140,6 +140,16 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="divider eb5">
+
+        <div class="container">
+            <h1>
+                “We ensure our projects are modeled intelligently to create more jobs than is required under EB-5 laws. Our team uses business intelligence and technology to track project expenditures and correlate expenses with EB-5 investor's capital investment.”
+            </h1>
+        </div>
+
     </section>
 
     <section id="eb5">
