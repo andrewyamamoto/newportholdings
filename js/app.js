@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('body').scrollspy({ target: '#navbar', offset:111, });
 
-    $(".navbar ul li a[href^='#'], #intro a, footer a").on('click', function(e) {
+    $(".navbar ul li a[href^='#'], #intro a, footer a, #about a").on('click', function(e) {
 
         e.preventDefault();
         var hash = this.hash;

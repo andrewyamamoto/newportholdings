@@ -149,12 +149,19 @@ h2{
 
             background-color:$blue;
             color:$white;
-            padding:65px 15px 15px 15px;
+            padding:45px 15px 15px 15px;
             position:relative;
             text-align:center;
             margin-top:40px;
             line-height:24px;
             min-height:330px;
+            h4 a{
+                color:$ltblue;
+                text-decoration:underline;
+                &:hover{
+                    color:$ltblue;
+                }
+            }
             .circle{
 
                 position:absolute;

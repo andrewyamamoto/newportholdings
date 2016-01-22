@@ -138,12 +138,17 @@ h2 {
   #about .callout .item {
     background-color: #044868;
     color: #FFF;
-    padding: 65px 15px 15px 15px;
+    padding: 45px 15px 15px 15px;
     position: relative;
     text-align: center;
     margin-top: 40px;
     line-height: 24px;
     min-height: 330px; }
+    #about .callout .item h4 a {
+      color: #71c6ed;
+      text-decoration: underline; }
+      #about .callout .item h4 a:hover {
+        color: #71c6ed; }
     #about .callout .item .circle {
       position: absolute;
       margin: 0 auto;
