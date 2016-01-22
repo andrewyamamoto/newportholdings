@@ -223,6 +223,13 @@ h2 {
   text-align: left;
   font-size: 14px; }
 
+#disclaimer {
+  padding: 40px 0;
+  font-size: 11px;
+  background-color: #f6f6f6; }
+  #disclaimer p {
+    text-shadow: 0px 2px #FFF; }
+
 footer {
   background-color: #333;
   padding: 40px 0;

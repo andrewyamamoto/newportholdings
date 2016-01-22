@@ -259,6 +259,14 @@ h2{
         font-size:14px;
     }
 }
+#disclaimer{
+    padding:40px 0;
+    font-size:11px;
+    background-color: $ltgrey;
+    p{
+        text-shadow:0px 2px $white;
+    }
+}
 footer{
     background-color: $dkgrey;
     padding:40px 0;
