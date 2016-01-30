@@ -1,12 +1,13 @@
 <?php include "../config/base.php"; ?>
 <?php include "../includes/header.php" ?>
     <body>
-        <?php include("../includes/navigation.php") ?>
+
 
         <?php
         if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
         {
             // Admin stuff will go here
+                include("../includes/navigation.php");
              ?>
 
              <?php

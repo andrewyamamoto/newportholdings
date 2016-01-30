@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(".navbar").offset().top>161?$(".navbar-fixed-top").addClass("top-nav-collapse"):$(".navbar-fixed-top").removeClass("top-nav-collapse")}),$(function(){$("a.page-scroll").bind("click",function(o){var a=$(this);$("body").stop().animate({scrollTop:$(a.attr("href")).offset().top-111},900,"easeInOutExpo"),o.preventDefault()})});

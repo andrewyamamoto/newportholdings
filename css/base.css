@@ -32,11 +32,13 @@
   .modal .modal-dialog > .modal-content > .modal-body input {
     border-radius: 0; }
 
+html {
+  margin-top: 111px; }
+
 body {
   font-family: "open_sansregular", sans-serif;
   font-size: 16px;
   line-height: 30px;
-  padding-top: 111px;
   position: relative; }
   body strong {
     font-family: "open_sansbold", sans-serif; }
@@ -82,9 +84,9 @@ h4 {
   -o-background-size: cover;
   background-size: cover; }
   .divider.finance {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-crop.jpg) center fixed; }
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-crop.jpg) bottom fixed; }
   .divider.eb5 {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-eb5.jpg) center fixed; }
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-eb5.jpg) bottom fixed; }
 
 .btn.btn-outline {
   background: none;
@@ -116,7 +118,7 @@ h2 {
 
 #intro {
   background-color: #333;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/img-sunset.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/img-sunset.jpg) no-repeat center -150px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
