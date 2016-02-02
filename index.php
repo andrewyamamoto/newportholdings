@@ -43,7 +43,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="item">
                         <span class='circle'><span class="square"></span></span>
-                        <h4><a href="#team">Experience</a></h4>
+                        <h4><a href="#our-team">Experience</a></h4>
                         <p>
                             When partners invest with Newport Holdings, LLC they do so with the knowledge that our experience in real estate development, combined with skilled local operators, will help earn them attractive investment outcomes.
                         </p>
@@ -52,7 +52,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="item">
                         <span class='circle'><span class="square"></span></span>
-                        <h4><a href="#finance">Strategic</a></h4>
+                        <h4><a href="#structured-finance">Strategic</a></h4>
                         <p>
                             Structured Development Financing is an increasingly important part of our business strategy. In each of our projects we provide flexible preferred equity debt financing.
                         </p>
@@ -61,7 +61,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="item">
                         <span class='circle'><span class="square"></span></span>
-                        <h4><a href="#eb5">Trust</a></h4>
+                        <h4><a href="#eb5-projects">Trust</a></h4>
                         <p>
                             Trust and integrity have been the hallmarks of how we do business and approach our partnerships. Our approach to doing business helps to bring us investment opportunities where we can add value in partnership with others who share our outlook.
                         </p>
@@ -70,7 +70,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="item">
                         <span class='circle'><span class="square"></span></span>
-                        <h4><a href="#opportunities">Knowledge</a></h4>
+                        <h4><a href="#current-opportunities">Knowledge</a></h4>
                         <p>
                             We use our knowledge, combined with our specialist property skills, to find creative and entrepreneurial investment opportunities that enable our teams to create value for our investors.
                         </p>
