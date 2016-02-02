@@ -6,3 +6,25 @@ js/jquery.easing.min.js
 js/jquery.easing.min.js
 
 config.codekit
+
+*.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_fonts.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_mediaqueries.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_nav.scssc
+
+js/min/app-min.js
+
+js/min/bootstrap-min.js
+
+js/min/app-min.js
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/base.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_nav.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_mediaqueries.scssc
+
+css/.sass-cache/97f12fd27d0f09f63babc50860e1874e26fcb208/_fonts.scssc
