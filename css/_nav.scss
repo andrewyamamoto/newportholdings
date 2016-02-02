@@ -19,6 +19,7 @@ $dropDown       : false;
   font-size:14px;
   .navbar-brand {
     color: $colDefault;
+    padding:0 15px;
     &:hover, &:focus {
       color: $colHighlight; }}
   .navbar-text {

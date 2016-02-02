@@ -1,6 +1,8 @@
 @import '_colors';
 @import '_fonts';
 @import '_modal';
+@import '_mixins';
+
 html{
     margin-top:111px;
 }
@@ -8,13 +10,12 @@ body{
     font-family: "open_sansregular", sans-serif;
     font-size: 16px;
     line-height: 30px;
-    position: relative;
     strong {
         font-family: "open_sansbold", sans-serif;
     }
+
 }
 
-// Main heading for dividers
 h1{
     font-family: "museo_slab500", serif;
     text-align:center;
@@ -34,18 +35,7 @@ h3{
 h4{
     font-family: "museo_slab500", serif;
 }
-@mixin border-radius($radius){
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-@mixin flex{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-}
+
 // heading for page section
 .heading{
     text-align: center;
@@ -111,10 +101,25 @@ h2{
         border-bottom:2px solid $white;
     }
 }
+.anchor{
+    display: block;
+    position: relative;
+    top: -111px;
+    visibility: hidden;
+}
+body#admin,
+body#property,
+section#intro,
+section#about,
+section#eb5,
+section#opportunities,
+section#team{
+
+}
 #intro,
 #about,
 #opportunities,
-#ourteam{
+#team{
     padding:60px 0 60px 0;
 }
 
@@ -199,7 +204,7 @@ h2{
     background-color: $white;
     padding:30px 0;
 }
-#finance{
+#finances{
 
     .left{
         color:$white;
@@ -231,7 +236,7 @@ h2{
         margin-bottom:15px;
     }
 }
-#ourteam{
+#team{
     .profile{
         text-align:center;
         .img-circle{
@@ -269,7 +274,37 @@ h2{
         text-shadow:0px 2px $white;
     }
 }
+
+#property.zh{
+    font-family: "Arial, Helvetica, Verdana", sans-serif;
+    h3{
+        margin:0 0 15px 0;
+        color: #044868;
+        font-weight:bold;
+        font-family: "Arial, Helvetica, Verdana", sans-serif;
+    }
+    .property-item{
+        // padding:15px;
+        // border:1px solid #CCC;
+        overflow:auto;
+        color:#333;
+        @include border-radius(5px);
+
+    }
+    .container{
+        margin-bottom:30px;
+    }
+    .logo{
+        float:left;
+        margin:0px 20px 0px 0px;
+    }
+
+
+}
 footer{
+  /* Set the fixed height of the footer here */
+
+
     background-color: $dkgrey;
     padding:40px 0;
     color: $grey;;
@@ -314,7 +349,6 @@ footer{
         margin-top:15px;
 
         > li {
-            // margin-bottom:10px;
             a{
                 color:#CCC;
             }
@@ -343,12 +377,9 @@ footer{
     background-color:$blue;
     padding:10px;
 }
-#registered-users{
-    // margin-top:30px;
-}
+
 .fa-remove{
     color:red;
 }
 @import '_nav';
 @import '_mediaqueries';
-//	750px	970px	1170px

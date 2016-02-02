@@ -89,3 +89,37 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="immigration-zh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">移民中介机构<br>请向我们的移民律师了解详情，获得最新的资讯</h4>
+      </div>
+      <div class="modal-body">
+          <form class='imm' name='imm'>
+              <input type="hidden" name="type" value="移民中介机构<br>请向我们的移民律师了解详情，获得最新的资讯">
+            <div class="form-group">
+              <label for="name" class='sr-only'>Name</label>
+              <input type="text" class="form-control" name="name" placeholder="姓名">
+            </div>
+            <div class="form-group">
+              <label for="phone" class='sr-only'>Phone</label>
+              <input type="text" class="form-control" name="phone" placeholder="手机">
+            </div>
+            <div class="form-group">
+              <label for="email" class='sr-only'>Email</label>
+              <input type="text" class="form-control" name="email" placeholder="邮箱">
+            </div>
+            <div class="form-group">
+              <label for="message" class='sr-only'>Message</label>
+              <textarea class="form-control" name="message" placeholder="留言"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" id="submit-imm">Register</button>
+          </form>
+      </div>
+
+    </div>
+  </div>
+</div>

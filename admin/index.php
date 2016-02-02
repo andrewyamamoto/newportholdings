@@ -1,8 +1,6 @@
 <?php include "../config/base.php"; ?>
 <?php include "../includes/header.php" ?>
-    <body>
-
-
+    <body id="admin">
         <?php
         if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username']))
         {
@@ -11,10 +9,10 @@
              ?>
 
              <?php
-                $q = "SELECT * FROM registeredUsers WHERE firstname!=''";
+                $q = "SELECT * FROM registeredUsers WHERE type!=''";
                 $r = mysql_query($q);
                 echo "
-                <div class='container'>
+                <div class='container' id='#nh'>
                     <div class='row'>
                         <div class='col-lg-12'>
                 ";
@@ -27,7 +25,7 @@
                             <th><strong>First Name</strong></th>
                             <th><strong>Last Name</strong></th>
                             <th><strong>Email</strong></th>
-                            <th><strong>Type</strong></th>
+                            <th><strong>Phone</strong></th>
                             <!-- <th>Remove</th> -->
                         </tr>
                     </thead>
@@ -39,6 +37,45 @@
                     echo "<td>$row->lastname</td>";
                     echo "<td>$row->email</td>";
                     echo "<td>$row->type</td>";
+                    // echo "<td><a href=''><i class='fa fa-remove'></i></a></td>";
+                    echo "<tr>";
+                }
+                echo "</table></div></div></div>";
+                echo "</form>";
+             ?>
+
+             <?php
+                $q = "SELECT * FROM registeredUsersZh WHERE type!=''";
+                $r = mysql_query($q);
+                echo "
+                <div class='container' id='#nh'>
+                    <div class='row'>
+                        <div class='col-lg-12'>
+                ";
+                echo "<form>";
+                echo "<h2 class='admin'>Users that requested information from chinese forms</h2>";
+                echo "<table class='table table-striped table-bordered table-condensed' id='registered-users'>";
+                echo "
+                    <thead>
+                        <tr>
+                            <th><strong>Full Name</strong></th>
+                            <th><strong>Email</strong></th>
+                            <th><strong>Phone</strong></th>
+                            <th><strong>Message</strong></th>
+                            <th><strong>Type</strong></th>
+                            <!-- <th>Remove</th> -->
+                        </tr>
+                    </thead>
+                ";
+                while( $row = mysql_fetch_object($r) ){
+
+                    echo "<tr>";
+                    echo "<td>$row->fullname</td>";
+                    echo "<td>$row->email</td>";
+                    echo "<td>$row->phone</td>";
+                    echo "<td>$row->message</td>";
+                    echo "<td>$row->type</td>";
+
                     // echo "<td><a href=''><i class='fa fa-remove'></i></a></td>";
                     echo "<tr>";
                 }
@@ -122,7 +159,7 @@
 
            <?php
         }
-        ?>
 
-    </body>
-</html>
+        ?>
+<?php //include("../includes/footer.php"); ?>
+<?php include("../includes/footer_inc.php"); ?>

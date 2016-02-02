@@ -1,10 +1,11 @@
 <?php include("config/base.php"); ?>
-<?php include("includes/header.php") ?>
 
-  <body data-spy="scroll" data-target="#navbar" id="home">
+<?php include("includes/header.php")?>
+
+  <body id="home">
 
     <?php include("includes/navigation.php") ?>
-
+    <a href="#" class='anchor' id="top"></a>
     <section id="intro" class='container-fluid'>
 
         <div class="container">
@@ -17,7 +18,7 @@
         </div>
 
     </section>
-
+    <a href="#" class='anchor' id="about-us"></a>
     <section id="about" class='container-fluid'>
 
         <div class="container">
@@ -42,7 +43,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="item">
                         <span class='circle'><span class="square"></span></span>
-                        <h4><a href="#ourteam">Experience</a></h4>
+                        <h4><a href="#team">Experience</a></h4>
                         <p>
                             When partners invest with Newport Holdings, LLC they do so with the knowledge that our experience in real estate development, combined with skilled local operators, will help earn them attractive investment outcomes.
                         </p>
@@ -90,7 +91,7 @@
         </div>
 
     </section>
-
+    <a href="#" class='anchor' id="structured-finance"></a>
     <section id="finance">
 
         <div class="container-fluid">
@@ -136,6 +137,7 @@
         </div>
     </section>
 
+
     <section class="divider eb5">
 
         <div class="container">
@@ -146,6 +148,7 @@
 
     </section>
 
+    <a href="#" class='anchor' id="eb5-projects"></a>
     <section id="eb5">
         <div class="container">
             <div class='heading'>
@@ -161,6 +164,7 @@
         </div>
     </section>
 
+    <a href="#" class='anchor' id="current-opportunities"></a>
     <section id="opportunities">
         <div class="container">
 
@@ -186,7 +190,8 @@
 
     </section>
 
-    <section id="ourteam">
+    <a href="#" class='anchor' id="our-team"></a>
+    <section id="team">
         <div class="container">
 
             <div class='heading'>
@@ -234,50 +239,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-4">
-                    <div class="footer-logo">
-                        <img src="img/img-logo-nh-footer.png" height="60" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-
-                    <h2>Navigation</h2>
-
-                    <ul class='footer-nav'>
-                        <li><a href="#intro">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#finance">Structured Finance</a></li>
-                        <li><a href="#eb5">EB-5 Projects</a></li>
-                        <li><a href="#opportunities">Current Opportunities</a></li>
-                        <li><a href="#ourteam">Our Team</a></li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <h2>Contact</h2>
-                    <ul class='contact'>
-                        <li class='address'>
-                            <span>Newport Holding, LLC <br>
-                                2429 W. Coast Highway, Suite 210 <br>
-                                Newport Beach, California 92663 <br></span>
-                        </li>
-                        <li class='phone'><span>949-478-0122</span></li>
-                        <!-- <li class='fax'><span>949-478-0122</span></li> -->
-                        <li class='email'><span>info@newportholdingsllc.com</span></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12 clearfix border-top">
-                    Copyright © 2016 Newport Holdings
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
     <?php
         include ("modal.php");
         include ("includes/footer.php");
+        include ("includes/footer_inc.php");
     ?>
