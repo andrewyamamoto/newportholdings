@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $('body').scrollspy({ target: '#navbar', offset:111,});
+    $('body').scrollspy({ target: '#navbar', offset:111});
 
 
    //  $(".scrollto").on('click', function(e) {
