@@ -232,8 +232,76 @@ section#team{
     h3{
         color:$blue;
     }
-    img{
+    .property-item{
+        background-color:$white;
+        border:1px solid darken($ltsection, 10%);
+        padding:15px;
         margin-bottom:15px;
+        position:relative;
+        h3{
+            margin-top:5px;
+        }
+        .investor-stat{
+            font-size:16px;
+            background-color:$ltsection;
+            padding:0 10px;
+            margin-bottom: 10px;
+            .value{
+                font-family: 'open_sansbold', sans-serif;
+                color:$blue;
+                margin-right:5px;
+            }
+        }
+        .stat{
+            font-size:12px;
+            > span{
+                font-family: 'museo_slab500', sans-serif;
+                margin-top:15px;
+                display:block;
+                font-size:18px;
+                color:$blue;
+            }
+            > div{
+                font-weight: bold;
+                background-color: $ltsection;
+            }
+            text-align:center;
+        }
+    }
+    .property-op{
+        overflow:auto;
+        background-color:#d2dfdf;
+        border-radius:5px;
+        // padding:5px;
+        font-size:14px;
+        border:1px solid #c0cece;
+        font-family: "museo_slab500", serif;
+        .main{
+            background-color: $white;
+        }
+        .stat{
+            &.main{
+                .value{font-size:28px;margin-top:5px;}
+                text-align:center;
+                background:none;
+
+                p{
+                    display:inline-block;
+                    line-height:12px;
+                    margin-bottom:0;
+                }
+            }
+            padding:10px 14px;
+            background-color:#c0cece;
+            text-align:center;
+            color:#8f9f9f;
+
+            .value{
+                color:$blue;
+                font-size:16px;
+            }
+        }
+
     }
 }
 #team{

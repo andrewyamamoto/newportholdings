@@ -175,16 +175,157 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <h3>Grace Manor, Plant City, Florida</h3>
-                    <img src="img/img-grace-manor.jpg" alt="Grace Manor" class='img-responsive img-thumbnail'>
-                    Grace Manor at Plant City is a combination Assisted/Independent and Memory Care facility located in Plant City, Florida. The community consists of 93 units of Assisted/Independent Living with 102 beds, and 32 units of Memory Care/Alzheimer’s facility with 40 beds. The proposed site is approximately 4.87 acres and is within one mile from South Florida Baptist Hospital. Newport Holdings has partnered with Garrard Senior Living to operate and manage Grace Manor.
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <h3>Lake Charles Estates</h3>
-                    <img src="img/img-lake-charles.jpg" alt="Lake Charles" class='img-responsive img-thumbnail'>
-                    Lake Charles Estates and Country Club is a premium quality estate on the shores of Lake Saint Charles at the edge of rapidly growing Haines City, Florida, featuring 507 homes in seven villages. Each home will be independently owned, and the resort villages will be managed by a group of renowned short-term rental vacation experts. Lake Charles Estates will feature a world-class amenities center and clubhouse, and will spread out over 183 acres.
-                </div>
+
+                <?php
+
+                    $q = "SELECT * FROM properties";
+                    $r = mysql_query($q);
+
+                    while($row  = mysql_fetch_object($r)){
+                        echo "
+                            <div class='col-lg-12 col-md-12'>
+                                <div class='row'>
+                                    <div class='property-item'>
+                                        <div class='row'>
+
+                                            <div class='col-lg-4'>
+                                                <img src='img/$row->image' alt='$row->title' class='img-responsive img-thumbnail'>
+                                            </div>
+                                            <div class='col-lg-8'>
+                                                <h3>$row->title</h3>
+                                            ";
+                                            if($row->size != ""){
+                                                echo "
+                                                    <div class='investor-stat'>
+                                                        <span class='value'>$row->investors</span> EB-5 Investors Sought |
+                                                        <span class='value'>$row->jobs</span> EB-5 Qualifying Jobs |
+                                                        <span class='value'>$row->perinvestor</span>Jobs Per Investor
+                                                    </div>
+                                                ";
+                                            }
+                                            echo "
+                                                <p>$row->description</p>
+                                            </div>
+                                        </div>
+                                        ";
+
+                                        if($row->size != ""){
+                                            echo"
+                                            <div class='row'>
+
+                                                <div class='col-lg-12'>
+
+                                                    <div class='row'>
+                                                         <div class='col-lg-3 stat'>
+
+                                                             <span class='value'>$row->size</span>
+                                                             <div>Project Size:</div>
+
+                                                         </div>
+                                                         <div class='col-lg-3 stat'>
+
+                                                             <span class='value'>$row->funds</span>
+                                                             <div>EB-5 Fund:</div>
+
+                                                         </div>
+                                                         <div class='col-lg-3 stat'>
+
+                                                             <span class='value'>$row->min</span>
+                                                             <div>Minimum Invest:</div>
+
+                                                         </div>
+                                                         <div class='col-lg-3 stat'>
+
+                                                             <span class='value'>$row->security</span>
+                                                             <div>Type of Security:</div>
+
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            ";
+                                        }
+                                            echo "
+                                    </div>
+                                </div>
+                            </div>
+                        ";
+                    }
+
+
+
+
+                    // while($row  = mysql_fetch_object($r)){
+                    //
+                    //     print "
+                    //         <div class='col-lg-12 col-md-12'>
+                    //             <div class='row'>
+                    //                 <div class='col-lg-4'>
+                    //                     <img src='img/$row->image' alt='$row->title' class='img-responsive img-thumbnail'>
+                    //                 </div>
+                    //                 <div class='col-lg-6'>
+                    //                     <h3>$row->title</h3>
+                    //                     print $row->description
+                    //                 </div>
+                    //                 <div class='col-lg-2'>
+                    //
+                    //                     <h3>$row->investors</h3>
+                    //                     <p>EB-5 Investors Sought</p>
+                    //
+                    //                 </div>
+                    //     ";
+                    //     if($row->size != ""){
+                    //         print "
+                    //         <div class='col-lg-12' style='margin-bottom:30px;border-bottom:1px solid #CCC;padding-bottom:30px;'>
+                    //             <div class='property-op'>
+                    //                 <div class='row main'>
+                    //                     <div class='col-lg-4 stat main'>
+                    //                         <span class='value'>$row->investors</span>
+                    //                         <p>EB-5 Investors Sought</p>
+                    //                     </div>
+                    //                     <div class='col-lg-4 stat main'>
+                    //                         <span class='value'>$row->jobs</span>
+                    //                         <p>EB-5 Qualifying Jobs</p>
+                    //                     </div>
+                    //                     <div class='col-lg-4 stat main'>
+                    //                         <span class='value'>$row->perinvestor</span>
+                    //                         <p>Jobs Per Investor</p>
+                    //                     </div>
+                    //                 </div>
+                    //                 <div class='row'>
+                    //
+                    //                     <div class='col-lg-3 stat'>
+                    //                         <span class='value'>$row->size</span> <br>
+                    //                         Project Size
+                    //                     </div>
+                    //                     <div class='col-lg-3 stat'>
+                    //                         <span class='value'>$row->funds</span> <br>
+                    //                         EB-5 Fund
+                    //                     </div>
+                    //                     <div class='col-lg-3 stat'>
+                    //                         <span class='value'>$row->min</span> <br>
+                    //                         Minimum Invest
+                    //                     </div>
+                    //                     <div class='col-lg-3 stat'>
+                    //                         <span class='value'>$row->security</span> <br>
+                    //                         Type of Security
+                    //                     </div>
+                    //                 </div>
+                    //             </div>
+                    //         </div>
+                    //
+                    //
+                    //         ";
+                    // }
+                    //
+                    //     print "
+                    //             </div>
+                    //         </div>
+                    //     ";
+                    //
+                    // }
+
+                ?>
             </div>
                 <button class='register-btn center-block' data-toggle="modal" data-target="#investor">Register to Receive Investment Documents <i class="fa fa-chevron-right"></i></button>
         </div>

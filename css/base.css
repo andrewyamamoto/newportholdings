@@ -205,8 +205,62 @@ h2 {
   background-color: #eef4f4; }
   #opportunities h3 {
     color: #044868; }
-  #opportunities img {
-    margin-bottom: 15px; }
+  #opportunities .property-item {
+    background-color: #FFF;
+    border: 1px solid #cfe0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative; }
+    #opportunities .property-item h3 {
+      margin-top: 5px; }
+    #opportunities .property-item .investor-stat {
+      font-size: 16px;
+      background-color: #eef4f4;
+      padding: 0 10px;
+      margin-bottom: 10px; }
+      #opportunities .property-item .investor-stat .value {
+        font-family: 'open_sansbold', sans-serif;
+        color: #044868;
+        margin-right: 5px; }
+    #opportunities .property-item .stat {
+      font-size: 12px;
+      text-align: center; }
+      #opportunities .property-item .stat > span {
+        font-family: 'museo_slab500', sans-serif;
+        margin-top: 15px;
+        display: block;
+        font-size: 18px;
+        color: #044868; }
+      #opportunities .property-item .stat > div {
+        font-weight: bold;
+        background-color: #eef4f4; }
+  #opportunities .property-op {
+    overflow: auto;
+    background-color: #d2dfdf;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #c0cece;
+    font-family: "museo_slab500", serif; }
+    #opportunities .property-op .main {
+      background-color: #FFF; }
+    #opportunities .property-op .stat {
+      padding: 10px 14px;
+      background-color: #c0cece;
+      text-align: center;
+      color: #8f9f9f; }
+      #opportunities .property-op .stat.main {
+        text-align: center;
+        background: none; }
+        #opportunities .property-op .stat.main .value {
+          font-size: 28px;
+          margin-top: 5px; }
+        #opportunities .property-op .stat.main p {
+          display: inline-block;
+          line-height: 12px;
+          margin-bottom: 0; }
+      #opportunities .property-op .stat .value {
+        color: #044868;
+        font-size: 16px; }
 
 #team .profile {
   text-align: center; }
